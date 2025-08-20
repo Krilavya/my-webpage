@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Webpage</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="style.css" />
+<title>Registration Form</title>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Webpage</h1>
-  </header>
+<div class="container">
+<form id="registerForm">
+<h2>Registration Form</h2>
+<label>Name:</label>
+<input type="text" id="name" required />
 
-  <section class="content">
-    <p>This is a simple webpage built with HTML, CSS, and JavaScript.</p>
-    <button id="alertButton">Click Me</button>
-  </section>
 
-  <footer>
-    <p>&copy; 2024 My Webpage</p>
-  </footer>
+<label>Email:</label>
+<input type="email" id="email" required />
 
-  <script src="script.js"></script>
+
+<label>Password:</label>
+<input type="password" id="password" required />
+
+
+<label>Gender:</label>
+<select id="gender" required>
+<option value="">Select Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select>
+
+
+<label>Address:</label>
+<textarea id="address" required></textarea>
+
+
+<button type="submit">Register</button>
+</form>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
